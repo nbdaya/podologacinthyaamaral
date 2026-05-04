@@ -1,7 +1,6 @@
 import "./App.css";
 
 function App() {
-
   const whatsappLink =
     "https://wa.me/5521979655226?text=Olá! Gostaria de agendar um atendimento de podologia domiciliar.";
 
@@ -60,7 +59,7 @@ function App() {
 
       {/* SOBRE */}
       <section id="sobre" className="sobre">
-        <img src="/img1.png" alt="Podóloga" />
+        <img src="/img1.png" alt="Podóloga realizando atendimento domiciliar" />
 
         <div>
           <span className="section-tag">Quem sou eu</span>
@@ -86,27 +85,27 @@ function App() {
         <div className="cards">
 
           <div className="card">
-            <img src="/podologiaclinica.png" />
+            <img src="/podologiaclinica.png" alt="Serviço de podologia clínica" />
             <p>Podologia Clínica</p>
           </div>
 
           <div className="card">
-            <img src="/unhasencravadas.png" />
+            <img src="/unhasencravadas.png" alt="Tratamento de unhas encravadas" />
             <p>Unhas Encravadas</p>
           </div>
 
           <div className="card">
-            <img src="/spadospes.png" />
+            <img src="/spadospes.png" alt="Spa dos pés relaxante" />
             <p>Spa dos Pés</p>
           </div>
 
           <div className="card">
-            <img src="/micoses.png" />
+            <img src="/micoses.png" alt="Tratamento de micoses nos pés" />
             <p>Micose</p>
           </div>
 
           <div className="card">
-            <img src="/atendimentoidosos.png" />
+            <img src="/atendimentoidosos.png" alt="Atendimento podológico para idosos e pés diabéticos" />
             <p>Atendimento ao Idoso e Pés diabéticos</p>
           </div>
 
