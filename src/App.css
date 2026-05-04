@@ -17,19 +17,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 60px;
+  flex-wrap: wrap;
 }
 
-.navbar h2 {
+.navbar h1 {
   font-weight: 600;
 }
 
-.navbar h2 span {
+.navbar h1 span {
   color: #c49a6c;
 }
 
 .navbar nav {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .navbar nav a {
@@ -50,9 +52,12 @@ body {
   align-items: center;
   padding: 80px 60px;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .hero-text {
+  flex: 1;
+  min-width: 280px;
   max-width: 650px;
 }
 
@@ -99,6 +104,7 @@ body {
   display: flex;
   gap: 15px;
   margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 button {
@@ -142,6 +148,7 @@ button {
   padding: 25px;
   border-radius: 16px;
   max-width: 280px;
+  width: 100%;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
@@ -151,10 +158,12 @@ button {
   gap: 50px;
   align-items: center;
   padding: 80px 60px;
+  flex-wrap: wrap;
 }
 
 .sobre img {
   width: 320px;
+  max-width: 100%;
   border-radius: 20px;
 }
 
@@ -196,11 +205,11 @@ button {
   margin-bottom: 30px;
 }
 
-/* GRID */
+/* GRID INTELIGENTE */
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 /* CARD */
@@ -208,7 +217,7 @@ button {
   background: white;
   border-radius: 16px;
   overflow: hidden;
-  width: 200px;
+  width: 100%;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
   transition: 0.3s;
   cursor: pointer;
@@ -262,12 +271,51 @@ button {
   margin-bottom: 20px;
 }
 
-/* RESPONSIVO */
-@media (max-width: 900px) {
+/* RESPONSIVO MOBILE REAL */
+@media (max-width: 768px) {
+
+  .hero,
+  .sobre,
+  .servicos,
+  .depoimentos,
+  .contato {
+    padding: 40px 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navbar nav {
+    justify-content: center;
+  }
 
   .hero {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .highlight {
+    font-size: 16px;
+  }
+
+  .sub {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
   }
 
   .sobre {
@@ -275,18 +323,8 @@ button {
     text-align: center;
   }
 
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .navbar nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .cards {
-    justify-content: center;
+  .sobre img {
+    max-width: 280px;
   }
 
 }
