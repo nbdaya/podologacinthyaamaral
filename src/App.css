@@ -18,31 +18,39 @@ body {
   align-items: center;
   padding: 25px 60px;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .navbar h1 {
   font-weight: 600;
+  font-size: clamp(18px, 4vw, 28px);
+  white-space: nowrap;
 }
 
 .navbar h1 span {
   color: #c49a6c;
 }
 
+/* MENU DESTACADO */
 .navbar nav {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
+  background: #c49a6c;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .navbar nav a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  color: white;
+  font-weight: 600;
   transition: 0.3s;
 }
 
 .navbar nav a:hover {
-  color: #c49a6c;
+  color: #f7f4ef;
 }
 
 /* HERO */
@@ -271,7 +279,7 @@ button {
   margin-bottom: 20px;
 }
 
-/* RESPONSIVO MOBILE REAL */
+/* RESPONSIVO */
 @media (max-width: 768px) {
 
   .hero,
