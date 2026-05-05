@@ -28,7 +28,7 @@ function App() {
           </span>
 
           <h1>
-            Podóloga em domicílio no Rio de Janeiro</span><br />
+            Podóloga em domicílio no <span>Rio de Janeiro</span><br />
             Atendimento profissional sem sair de casa
           </h1>
 
