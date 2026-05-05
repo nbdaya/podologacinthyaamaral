@@ -2,7 +2,7 @@ import "./App.css";
 
 function App() {
   const whatsappLink =
-    "https://wa.me/5521979655226?text=Olá! Gostaria de agendar um atendimento 😊";
+    "https://wa.me/5521979655226?text=Olá! Gostaria de agendar um atendimento domiciliar 😊";
 
   return (
     <div>
@@ -12,8 +12,8 @@ function App() {
         <h1>Podóloga Cinthya <span>Amaral</span></h1>
 
         <nav>
-          <a href="#servicos">Serviços</a>
           <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
           <a href="#depoimentos">Depoimentos</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -38,7 +38,9 @@ function App() {
 
           <div className="buttons">
             <a href={whatsappLink} target="_blank" rel="noreferrer">
-              <button className="btn-primary">Agendar agora</button>
+              <button className="btn-primary">
+                Agendar atendimento domiciliar
+              </button>
             </a>
 
             <a href="#servicos">
@@ -88,32 +90,32 @@ function App() {
           </div>
 
           <div className="card">
-            <img src="/unhasencravadas.png" alt="Tratamento de unhas encravadas" />
+            <img src="/unhasencravadas.png" alt="Unhas encravadas" />
             <p>Unhas Encravadas</p>
           </div>
 
           <div className="card">
-            <img src="/spadospes.png" alt="Spa dos pés relaxante" />
+            <img src="/spadospes.png" alt="Spa dos pés" />
             <p>Spa dos Pés</p>
           </div>
 
           <div className="card">
-            <img src="/micoses.png" alt="Tratamento de micose nos pés" />
+            <img src="/micoses.png" alt="Tratamento de micose" />
             <p>Micose</p>
           </div>
 
           <div className="card">
-            <img src="/atendimentoidosos.png" alt="Atendimento podológico para idosos" />
+            <img src="/atendimentoidosos.png" alt="Atendimento ao idoso" />
             <p>Atendimento ao Idoso</p>
           </div>
 
           <div className="card">
-            <img src="/reflexologia.png" alt="Reflexologia podal relaxante" />
+            <img src="/reflexologia.png" alt="Reflexologia podal" />
             <p>Reflexologia</p>
           </div>
 
           <div className="card">
-            <img src="/plastica-pes.png" alt="Plástica dos pés com hidratação profunda" />
+            <img src="/plastica-pes.png" alt="Plástica dos pés" />
             <p>Plástica dos Pés</p>
           </div>
 
@@ -146,14 +148,14 @@ function App() {
         </a>
       </section>
 
-      {/* BOTÃO FLUTUANTE */}
+      {/* WHATSAPP FLOAT */}
       <a
         href={whatsappLink}
         target="_blank"
         rel="noreferrer"
         className="whatsapp-float"
       >
-        <img src="/whatsapp.jpg" alt="Ícone do WhatsApp" />
+        <img src="/whatsapp.png" alt="WhatsApp" />
       </a>
 
     </div>
