@@ -1,239 +1,93 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-  background: #f7f4ef;
-  color: #333;
-}
-
-/* ESPAÇAMENTO GLOBAL */
-section {
-  margin-bottom: 40px;
-}
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 60px;
-  flex-wrap: wrap;
-}
-
-.navbar h1 span {
-  color: #c49a6c;
-}
-
-.navbar nav {
-  display: flex;
-  gap: 15px;
-  background: #c49a6c;
-  padding: 10px 20px;
-  border-radius: 12px;
-}
-
-.navbar nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f5f2;
 }
 
 /* HERO */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 60px;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.hero-text {
-  max-width: 600px;
-}
-
-.tag.destaque {
-  background: #c49a6c;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 15px;
+  text-align: center;
+  padding: 60px 20px;
 }
 
 .hero h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #c79a63;
 }
 
-.hero h1 span {
-  color: #c49a6c;
+.hero p {
+  font-size: 1.2rem;
 }
 
-.sub {
-  margin-bottom: 20px;
-  color: #666;
+/* GALERIA */
+.galeria {
+  padding: 40px 20px;
 }
 
-/* BOTÕES */
-.buttons {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-button {
-  padding: 12px 18px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background: #c49a6c;
-  color: white;
-}
-
-.btn-outline {
-  border: 2px solid #c49a6c;
-  background: transparent;
-  color: #c49a6c;
-}
-
-/* CARD INFO */
-.card-info {
-  background: white;
-  padding: 20px;
-  border-radius: 16px;
-  max-width: 280px;
-}
-
-/* SOBRE */
-.sobre {
-  display: flex;
-  gap: 40px;
-  padding: 60px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.sobre img {
-  width: 300px;
-  border-radius: 20px;
-}
-
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.badges span {
-  background: #eee;
-  padding: 8px 12px;
-  border-radius: 10px;
-}
-
-/* SERVIÇOS */
-.servicos {
-  padding: 60px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
+.galeria h2 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.card img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-}
-
-.card p {
-  padding: 10px;
-}
-
-/* DEPOIMENTOS */
-.depoimentos {
-  background: #efebe5;
-  padding: 60px;
-}
-
-.depoimentos-container {
-  display: flex;
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-.depoimento-card {
+.card-galeria {
   background: white;
   padding: 15px;
   border-radius: 12px;
-  flex: 1 1 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-/* CONTATO */
-.contato {
-  text-align: center;
-  padding: 60px;
+.card-galeria img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-galeria h3 {
+  margin: 10px 0;
+}
+
+.comentarios {
+  max-height: 120px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.comentarios p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* FORM */
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #c79a63;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 /* WHATSAPP */
-.whatsapp-float {
+.whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25D366;
-  padding: 14px;
-  border-radius: 50%;
-  animation: pulse 1.5s infinite;
+  width: 60px;
+  height: 60px;
 }
 
-.whatsapp-float img {
-  width: 28px;
-}
-
-/* ANIMAÇÃO */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-
-  .hero,
-  .sobre {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .buttons {
-    flex-direction: column;
-  }
-
-  button {
-    width: 100%;
-  }
+.whatsapp img {
+  width: 100%;
 }
