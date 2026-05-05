@@ -57,7 +57,7 @@ function App() {
 
       {/* SOBRE */}
       <section id="sobre" className="sobre">
-        <img src="/img1.png" alt="Podóloga atendendo" />
+        <img src="/img1.png" alt="Podóloga realizando atendimento domiciliar" />
 
         <div>
           <span className="section-tag">Quem sou eu</span>
@@ -81,13 +81,42 @@ function App() {
         <h2>Serviços</h2>
 
         <div className="cards">
-          <div className="card"><img src="/podologiaclinica.png" /><p>Podologia Clínica</p></div>
-          <div className="card"><img src="/unhasencravadas.png" /><p>Unhas Encravadas</p></div>
-          <div className="card"><img src="/spadospes.png" /><p>Spa dos Pés</p></div>
-          <div className="card"><img src="/micoses.png" /><p>Micose</p></div>
-          <div className="card"><img src="/atendimentoidosos.png" /><p>Atendimento ao Idoso</p></div>
-          <div className="card"><img src="/reflexologia.png" /><p>Reflexologia</p></div>
-          <div className="card"><img src="/plastica-pes.png" /><p>Plástica dos Pés</p></div>
+
+          <div className="card">
+            <img src="/podologiaclinica.png" alt="Podologia clínica" />
+            <p>Podologia Clínica</p>
+          </div>
+
+          <div className="card">
+            <img src="/unhasencravadas.png" alt="Tratamento de unhas encravadas" />
+            <p>Unhas Encravadas</p>
+          </div>
+
+          <div className="card">
+            <img src="/spadospes.png" alt="Spa dos pés relaxante" />
+            <p>Spa dos Pés</p>
+          </div>
+
+          <div className="card">
+            <img src="/micoses.png" alt="Tratamento de micose nos pés" />
+            <p>Micose</p>
+          </div>
+
+          <div className="card">
+            <img src="/atendimentoidosos.png" alt="Atendimento podológico para idosos" />
+            <p>Atendimento ao Idoso</p>
+          </div>
+
+          <div className="card">
+            <img src="/reflexologia.png" alt="Reflexologia podal relaxante" />
+            <p>Reflexologia</p>
+          </div>
+
+          <div className="card">
+            <img src="/plastica-pes.png" alt="Plástica dos pés com hidratação profunda" />
+            <p>Plástica dos Pés</p>
+          </div>
+
         </div>
       </section>
 
@@ -96,6 +125,7 @@ function App() {
         <h2>Depoimentos de Clientes</h2>
 
         <div className="depoimentos-container">
+
           <div className="depoimento-card">
             <p>"Excelente atendimento, muito cuidadosa!"</p>
           </div>
@@ -103,6 +133,7 @@ function App() {
           <div className="depoimento-card">
             <p>"Profissional incrível, resolveu meu problema rapidamente."</p>
           </div>
+
         </div>
       </section>
 
@@ -116,8 +147,13 @@ function App() {
       </section>
 
       {/* BOTÃO FLUTUANTE */}
-      <a href={whatsappLink} target="_blank" rel="noreferrer" className="whatsapp-float">
-        <img src="/whatsapp.png" alt="WhatsApp" />
+      <a
+        href={whatsappLink}
+        target="_blank"
+        rel="noreferrer"
+        className="whatsapp-float"
+      >
+        <img src="/whatsapp.png" alt="Ícone do WhatsApp" />
       </a>
 
     </div>
