@@ -2,7 +2,7 @@ import "./App.css";
 
 function App() {
   const whatsappLink =
-    "https://wa.me/5521979655226?text=Olá! Gostaria de agendar um atendimento de podologia domiciliar.";
+    "https://wa.me/5521979655226?text=Olá! Gostaria de agendar um atendimento 😊";
 
   return (
     <div>
@@ -20,18 +20,20 @@ function App() {
       </header>
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero fade-in">
         <div className="hero-text">
 
-          <span className="tag">Podologia Domiciliar</span>
+          <span className="tag destaque">
+            FOCO EM PODOLOGIA DOMICILIAR
+          </span>
 
           <p className="highlight">
             Atendimento profissional no conforto da sua casa
           </p>
 
           <h1>
-            Cuidado com seus <span>pés</span>, <br />
-            no conforto da sua casa
+            Podóloga em domicílio no <span>Rio de Janeiro</span><br/>
+            Atendimento profissional sem sair de casa
           </h1>
 
           <p className="sub">
@@ -40,7 +42,9 @@ function App() {
 
           <div className="buttons">
             <a href={whatsappLink} target="_blank" rel="noreferrer">
-              <button className="btn-primary">Agendar via WhatsApp</button>
+              <button className="btn-primary">
+                Agendar agora (vagas limitadas)
+              </button>
             </a>
 
             <a href="#servicos">
@@ -48,7 +52,7 @@ function App() {
             </a>
           </div>
 
-          <p className="stars">★★★★★ Mais de 9 anos de experiência</p>
+          <p className="stars">★★★★★ Mais de 9 anos atendendo com excelência</p>
         </div>
 
         <div className="card-info">
@@ -58,7 +62,7 @@ function App() {
       </section>
 
       {/* SOBRE */}
-      <section id="sobre" className="sobre">
+      <section id="sobre" className="sobre fade-in">
         <img src="/img1.png" alt="Podóloga realizando atendimento domiciliar" />
 
         <div>
@@ -66,7 +70,7 @@ function App() {
           <h2>Conheça Podóloga Cinthya Amaral</h2>
 
           <p>
-            Sou podóloga formada a mais de 9 anos pelo Instituto IBRAPE, apaixonada pela profissão, com paciência e dedicação pois cada paciente é único e merece atendimento personalizado.
+            Sou podóloga formada há mais de 9 anos pelo Instituto IBRAPE, apaixonada pela profissão. Cada paciente recebe um atendimento personalizado, com cuidado, paciência e dedicação.
           </p>
 
           <div className="badges">
@@ -79,60 +83,95 @@ function App() {
       </section>
 
       {/* SERVIÇOS */}
-      <section id="servicos" className="servicos">
-        <h2>Cuidados especializados</h2>
+      <section id="servicos" className="servicos fade-in">
+        <h2>Serviços</h2>
 
         <div className="cards">
 
           <div className="card">
-            <img src="/podologiaclinica.png" alt="Serviço de podologia clínica" />
+            <img src="/podologiaclinica.png" alt="Podologia clínica" />
             <p>Podologia Clínica</p>
           </div>
 
           <div className="card">
-            <img src="/unhasencravadas.png" alt="Tratamento de unhas encravadas" />
+            <img src="/unhasencravadas.png" alt="Unhas encravadas" />
             <p>Unhas Encravadas</p>
           </div>
 
           <div className="card">
-            <img src="/spadospes.png" alt="Spa dos pés relaxante" />
+            <img src="/spadospes.png" alt="Spa dos pés" />
             <p>Spa dos Pés</p>
           </div>
 
           <div className="card">
-            <img src="/micoses.png" alt="Tratamento de micoses nos pés" />
+            <img src="/micoses.png" alt="Micose" />
             <p>Micose</p>
           </div>
 
           <div className="card">
-            <img src="/atendimentoidosos.png" alt="Atendimento podológico para idosos e pés diabéticos" />
+            <img src="/atendimentoidosos.png" alt="Atendimento ao idoso" />
             <p>Atendimento ao Idoso e Pés diabéticos</p>
+          </div>
+
+          <div className="card">
+            <img src="/reflexologia.png" alt="Reflexologia" />
+            <p>Reflexologia</p>
+          </div>
+
+          <div className="card">
+            <img src="/plastica-pes.png" alt="Plástica dos pés" />
+            <p>Plástica dos Pés</p>
           </div>
 
         </div>
       </section>
 
       {/* DEPOIMENTOS */}
-      <section id="depoimentos" className="depoimentos">
-        <h2>O que dizem minhas clientes</h2>
+      <section id="depoimentos" className="depoimentos fade-in">
+        <h2>Depoimentos de Clientes</h2>
 
-        <input placeholder="Seu nome" />
-        <textarea placeholder="Conte sua experiência"></textarea>
+        <div className="depoimentos-container">
 
-        <button className="btn-primary">Enviar</button>
+          <div className="depoimento-card">
+            <p>"Excelente atendimento, muito cuidadosa!"</p>
+            <img src="/cliente1.jpg" alt="Cliente satisfeita" />
+          </div>
 
-        <p>"Atendimento impecável!" — Juliana</p>
-        <p>"Muito profissional e cuidadosa." — Mariana</p>
+          <div className="depoimento-card">
+            <p>"Profissional incrível, resolveu meu problema rapidamente."</p>
+            <video controls>
+              <source src="/video1.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+        </div>
+
+        <div className="form-depoimento">
+          <input placeholder="Seu nome" />
+          <textarea placeholder="Conte sua experiência"></textarea>
+          <input type="file" accept="image/*,video/*" />
+          <button className="btn-primary">Enviar</button>
+        </div>
       </section>
 
       {/* CONTATO */}
-      <section id="contato" className="contato">
+      <section id="contato" className="contato fade-in">
         <h2>Agende seu atendimento</h2>
 
         <a href={whatsappLink} target="_blank" rel="noreferrer">
           <button className="btn-primary">Falar no WhatsApp</button>
         </a>
       </section>
+
+      {/* BOTÃO FLUTUANTE */}
+      <a 
+        href={whatsappLink}
+        target="_blank"
+        rel="noreferrer"
+        className="whatsapp-float"
+      >
+        💬
+      </a>
 
     </div>
   );
