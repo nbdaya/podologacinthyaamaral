@@ -11,6 +11,11 @@ body {
   color: #333;
 }
 
+/* ESPAÇAMENTO GLOBAL */
+section {
+  margin-bottom: 40px;
+}
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -18,12 +23,6 @@ body {
   align-items: center;
   padding: 25px 60px;
   flex-wrap: wrap;
-  gap: 15px;
-}
-
-.navbar h1 {
-  font-size: clamp(20px, 4vw, 28px);
-  font-weight: 600;
 }
 
 .navbar h1 span {
@@ -33,7 +32,6 @@ body {
 .navbar nav {
   display: flex;
   gap: 15px;
-  flex-wrap: wrap;
   background: #c49a6c;
   padding: 10px 20px;
   border-radius: 12px;
@@ -50,45 +48,37 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 60px;
+  padding: 60px 60px;
   gap: 40px;
   flex-wrap: wrap;
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 280px;
   max-width: 600px;
 }
 
-/* DESTAQUE */
 .tag.destaque {
   background: #c49a6c;
   color: white;
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: bold;
-  font-size: 16px;
   display: inline-block;
   margin-bottom: 15px;
 }
 
-/* TÍTULO */
 .hero h1 {
-  font-size: clamp(28px, 5vw, 42px);
+  font-size: 40px;
   margin-bottom: 15px;
-  line-height: 1.2;
 }
 
 .hero h1 span {
   color: #c49a6c;
 }
 
-/* TEXTO */
 .sub {
-  font-size: 16px;
-  color: #666;
   margin-bottom: 20px;
+  color: #666;
 }
 
 /* BOTÕES */
@@ -96,7 +86,6 @@ body {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 15px;
 }
 
 button {
@@ -104,16 +93,11 @@ button {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-size: 15px;
 }
 
 .btn-primary {
   background: #c49a6c;
   color: white;
-}
-
-.btn-primary:hover {
-  background: #a88258;
 }
 
 .btn-outline {
@@ -122,55 +106,26 @@ button {
   color: #c49a6c;
 }
 
-.btn-outline:hover {
-  background: #c49a6c;
-  color: white;
-}
-
-/* ESTRELAS */
-.stars {
-  font-size: 14px;
-  color: #444;
-}
-
 /* CARD INFO */
 .card-info {
   background: white;
   padding: 20px;
   border-radius: 16px;
   max-width: 280px;
-  width: 100%;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 /* SOBRE */
 .sobre {
   display: flex;
-  gap: 50px;
-  align-items: center;
-  padding: 80px 60px;
+  gap: 40px;
+  padding: 60px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .sobre img {
   width: 300px;
-  max-width: 100%;
   border-radius: 20px;
-}
-
-.section-tag {
-  color: #c49a6c;
-  font-weight: 600;
-}
-
-.sobre h2 {
-  font-size: 28px;
-  margin: 10px 0;
-}
-
-.sobre p {
-  margin-bottom: 20px;
-  color: #555;
 }
 
 .badges {
@@ -183,50 +138,34 @@ button {
   background: #eee;
   padding: 8px 12px;
   border-radius: 10px;
-  font-size: 14px;
 }
 
 /* SERVIÇOS */
 .servicos {
-  padding: 80px 60px;
+  padding: 60px;
 }
 
-.servicos h2 {
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-/* GRID */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
 }
 
-/* CARD */
 .card {
   background: white;
   border-radius: 16px;
   overflow: hidden;
   text-align: center;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
 }
 
 .card img {
   width: 100%;
-  height: 130px;
+  height: 140px;
   object-fit: cover;
 }
 
 .card p {
-  padding: 12px;
-  font-weight: 500;
+  padding: 10px;
 }
 
 /* DEPOIMENTOS */
@@ -235,14 +174,10 @@ button {
   padding: 60px;
 }
 
-.depoimentos h2 {
-  margin-bottom: 20px;
-}
-
 .depoimentos-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .depoimento-card {
@@ -250,7 +185,6 @@ button {
   padding: 15px;
   border-radius: 12px;
   flex: 1 1 250px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 /* CONTATO */
@@ -267,33 +201,32 @@ button {
   background: #25D366;
   padding: 14px;
   border-radius: 50%;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  z-index: 1000;
+  animation: pulse 1.5s infinite;
 }
 
 .whatsapp-float img {
   width: 28px;
-  height: 28px;
+}
+
+/* ANIMAÇÃO */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
 
+  .hero,
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .navbar {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .navbar nav {
-    justify-content: center;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 50px 20px;
+    gap: 10px;
   }
 
   .buttons {
@@ -302,21 +235,5 @@ button {
 
   button {
     width: 100%;
-  }
-
-  .sobre {
-    flex-direction: column;
-    text-align: center;
-    padding: 50px 20px;
-  }
-
-  .servicos,
-  .depoimentos,
-  .contato {
-    padding: 50px 20px;
-  }
-
-  .card-info {
-    margin-top: 20px;
   }
 }
