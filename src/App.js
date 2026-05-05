@@ -155,7 +155,7 @@ function App() {
         rel="noreferrer"
         className="whatsapp-float"
       >
-        <img src="/whatsapp.png" alt="WhatsApp" />
+        <img src="/whatsapp.jpg" alt="WhatsApp" />
       </a>
 
     </div>
